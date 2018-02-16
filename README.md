@@ -3,64 +3,52 @@
 A light wight Date wrapper that adds SQL like format capabilities
 (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
-## methods
+## prototype
 
-*constructor([format, [...dateArgs]])*
+### constructor([`String format`, [`...dateArgs`]])
 
 - format (optional): the format to be used by default
 - dateArgs (optional): arguments passed to the nativ Date constructor
-    
-*setformat(format)*
+
+### setformat(`format`)
   
-- format: the new format to be used by default
+- `format` used as default format
 		
-*toString([format])*
-- format optional
-  - if format is not present the constructor format will be used.
-  - if none is present Date.prototype.toString will be returned.
+### toString([`format`])
+- `format` (optional)
+   if format is not present the constructor format will be used.
+   if none is present Date.prototype.toString will be returned.
    
-*toJSON()*
+### toJSON()
 - returns the this.getTime which aims to ease convertions to json
 		
 ## static properties
- months Array<String>
+### months `Array<String>`
   3 digit representation of months in english 
   overwrite this to change the month naming
 		
- days Array<String>
+### days `Array<String>`
   3 digit representation of weekdays in english
   overwrite this to change the day naming
 
- formats Object<function(date)>
-  the actual replacement handler, one can add its own here. These are the embedded options:
+### formats `Object<replacement, function(Date)>`
+the replacement handler host object. One can implement additional handlers here, these are the embedded options:
 		
-  %d day of month
+-`%d` day of month
+-`%D` day of month with leading 0 if < 10
+-`%m` day of month
+-`%M` day of month with leading 0 if < 10
+-`%b` name of month provided by DateFormat.months
+-`%y` year in 2 digits
+-`%Y` year in 4 digit 
+-`%a` name of day provided by DateFormat.days
+-`%W` number of the week in the year
+-`%H` hours
+-`%i` minutes
+-`%s` seconds
+-`%z` timezone offset
 		
-  %D day of month with leading 0 if < 10
-		
-  %m day of month
-		
-  %M day of month with leading 0 if < 10
-		
-  %b name of month provided by DateFormat.months
-		
-  %y year in 2 digits
-		
-  %Y year in 4 digit 
-		
-  %a name of day provided by DateFormat.days
-		
-  %W number of the week in the year
-		
-  %H hours
-		
-  %i minutes
-		
-  %s seconds
-		
-  %z timezone offset
-		
-## examples
+## Examples
 
 ```javascript
 var date = new DateFormat("%D.%M.%y", 2017, 2, 15, 12, 30);
@@ -74,7 +62,7 @@ date.setFormat("%H:%i");
 date.toString(); //12:30
 ```
 
-toString and toJSON will also get called implicit
+> toString and toJSON will also get called implicit
 
 ```javascript
 var date = new DateFormat("%m", 2017, 2);
