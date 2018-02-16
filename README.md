@@ -4,9 +4,10 @@ A light wight Date wrapper that adds SQL like format capabilities
 (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
 ## methods
-: **constructor([format, [...dateArgs]])**
-	-format (optional): the format to be used by default
-	-dateArgs (optional): arguments passed to the nativ Date constructor
+  **constructor([format, [...dateArgs]])**
+  
+    -format (optional): the format to be used by default
+    -dateArgs (optional): arguments passed to the nativ Date constructor
 	
 **setformat(format)**
 	-format: the new format to be used by default
