@@ -7,8 +7,8 @@ A light wight Date wrapper that adds SQL like format capabilities
 
 ### constructor([`String format`, [`...dateArgs`]])
 
-- format (optional): the format to be used by default
-- dateArgs (optional): arguments passed to the nativ Date constructor
+- **`format`** (optional): the format to be used by default
+- **`dateArgs`** (optional): arguments passed to the nativ Date constructor
 
 ### setformat(`format`)
   
