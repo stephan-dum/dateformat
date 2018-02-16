@@ -15,26 +15,19 @@ A light wight [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 - **`format`** used as default format
 		
 #### toString([`format`])
-- **`format`** (optional) 
-
-   if format is not present the constructor format will be used.
-   
-   if none is present Date.prototype.toString will be returned.
+- **`format`** (optional) if format is not present the constructor format will be used. if none is present Date.prototype.toString will be returned.
    
 #### toJSON()
 - returns `this.getTime` aiming to ease convertions to json
 		
 ## static properties
 #### months `Array<String>`
-
-  3 digit representation of months in english 
-  
-  overwrite this to change the month naming
+-3 digit representation of months in english 
+-overwrite this to change the month naming
 		
 #### days `Array<String>`
-  3 digit representation of weekdays in english
-  
-  overwrite this to change the day naming
+-3 digit representation of weekdays in english
+-overwrite this to change the day naming
 
 #### formats `Object<replacement, function(Date)>`
 the replacement handler host object. One can implement additional handlers here, these are the embedded options:
@@ -53,7 +46,7 @@ the replacement handler host object. One can implement additional handlers here,
 - `%s` seconds
 - `%z` timezone offset
 		
-## Examples
+## Usage
 
 ```javascript
 var date = new DateFormat("%D.%M.%y", 2017, 2, 15, 12, 30);
