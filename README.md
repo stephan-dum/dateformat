@@ -5,19 +5,20 @@ A light wight [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 
 ## prototype
 
-### constructor([`String format`, [`...dateArgs`]])
+#### constructor([`String format`, [`...dateArgs`]])
 
-- **`format`** (optional): the format to be used by default
-- **`dateArgs`** (optional): arguments passed to the nativ Date constructor
+- **`format`** (optional) the format to be used by default
+- **`dateArgs`** (optional) arguments passed to the nativ Date constructor
 
 #### setformat(`format`)
   
 - **`format`** used as default format
 		
 #### toString([`format`])
-- **`format`** (optional)
+- **`format`** (optional) 
 
    if format is not present the constructor format will be used.
+   
    if none is present Date.prototype.toString will be returned.
    
 #### toJSON()
@@ -25,29 +26,32 @@ A light wight [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 		
 ## static properties
 #### months `Array<String>`
+
   3 digit representation of months in english 
+  
   overwrite this to change the month naming
 		
 #### days `Array<String>`
   3 digit representation of weekdays in english
+  
   overwrite this to change the day naming
 
 #### formats `Object<replacement, function(Date)>`
 the replacement handler host object. One can implement additional handlers here, these are the embedded options:
-		
--`%d` day of month
--`%D` day of month with leading 0 if < 10
--`%m` day of month
--`%M` day of month with leading 0 if < 10
--`%b` name of month provided by DateFormat.months
--`%y` year in 2 digits
--`%Y` year in 4 digit 
--`%a` name of day provided by DateFormat.days
--`%W` number of the week in the year
--`%H` hours
--`%i` minutes
--`%s` seconds
--`%z` timezone offset
+
+- `%d` day of month
+- `%D` day of month with leading 0 if < 10
+- `%m` day of month
+- `%M` day of month with leading 0 if < 10
+- `%b` name of month provided by DateFormat.months
+- `%y` year in 2 digits
+- `%Y` year in 4 digit 
+- `%a` name of day provided by DateFormat.days
+- `%W` number of the week in the year
+- `%H` hours
+- `%i` minutes
+- `%s` seconds
+- `%z` timezone offset
 		
 ## Examples
 
