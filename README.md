@@ -22,12 +22,12 @@ A light wight [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 		
 ## static properties
 #### months `Array<String>`
--3 digit representation of months in english 
--overwrite this to change the month naming
+- 3 digit representation of months in english 
+- overwrite this to change the month naming
 		
 #### days `Array<String>`
--3 digit representation of weekdays in english
--overwrite this to change the day naming
+- 3 digit representation of weekdays in english
+- overwrite this to change the day naming
 
 #### formats `Object<replacement, function(Date)>`
 the replacement handler host object. One can implement additional handlers here, these are the embedded options:
