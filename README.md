@@ -7,9 +7,9 @@ A light wight Date wrapper that adds SQL like format capabilities
 
 *constructor([format, [...dateArgs]])*
 
-  format (optional): the format to be used by default
+%nbsp;&nbsp;format (optional): the format to be used by default
 	
-  dateArgs (optional): arguments passed to the nativ Date constructor
+%nbsp;&nbsp;dateArgs (optional): arguments passed to the nativ Date constructor
     
 *setformat(format)*
   
