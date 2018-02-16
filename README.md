@@ -7,21 +7,20 @@ A light wight Date wrapper that adds SQL like format capabilities
 
 *constructor([format, [...dateArgs]])*
 
-%nbsp;&nbsp;format (optional): the format to be used by default
-	
-%nbsp;&nbsp;dateArgs (optional): arguments passed to the nativ Date constructor
+- format (optional): the format to be used by default
+- dateArgs (optional): arguments passed to the nativ Date constructor
     
 *setformat(format)*
   
-  format: the new format to be used by default
+- format: the new format to be used by default
 		
-  toString([format])
-    format optional
-      if format is not present the constructor format will be used.
-      if none is present Date.prototype.toString will be returned.
+*toString([format])*
+- format optional
+  - if format is not present the constructor format will be used.
+  - if none is present Date.prototype.toString will be returned.
    
-  toJSON()
-    returns the this.getTime which aims to ease convertions to json
+*toJSON()*
+- returns the this.getTime which aims to ease convertions to json
 		
 ## static properties
  months Array<String>
