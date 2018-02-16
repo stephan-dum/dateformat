@@ -4,20 +4,20 @@ A light wight Date wrapper that adds SQL like format capabilities
 (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
 ## methods
-**constructor([format, [...dateArgs]])**
- 	format optional
+  -**constructor([format, [...dateArgs]])**
+		-format optional
 			the format to be used by default
-		dateArgs
+		-dateArgs
 			arguments passed to the nativ Date constructor
 	
-	**setformat(format)**
-		the new format to be used by default
+	-**setformat(format)**
+		-format the new format to be used by default
 		
-	**toString([format])**
-		format optional
+	-**toString([format])**
+		-format optional
 			if format is not present the constructor format will be used.
 			if none is present Date.prototype.toString will be returned.
-	**toJSON()**
+	-**toJSON()**
 		returns the this.getTime which aims to ease convertions to json
 		
 ## static properties
