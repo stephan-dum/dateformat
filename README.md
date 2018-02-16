@@ -1,26 +1,26 @@
-#DateFormat
+# DateFormat
 
 A light wight Date wrapper that adds SQL like format capabilities
 (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
-methods
-	constructor([format, [...dateArgs]])
-		format optional
+## methods
+**constructor([format, [...dateArgs]])**
+ 	format optional
 			the format to be used by default
 		dateArgs
 			arguments passed to the nativ Date constructor
 	
-	setformat(format)
+	**setformat(format)**
 		the new format to be used by default
 		
-	toString([format])
+	**toString([format])**
 		format optional
 			if format is not present the constructor format will be used.
 			if none is present Date.prototype.toString will be returned.
-	toJSON()
+	**toJSON()**
 		returns the this.getTime which aims to ease convertions to json
-
-static properties
+		
+## static properties
 	months Array<String> 3 digit representation in english 
 		overwrite this to change the month naming
 		
@@ -56,8 +56,8 @@ static properties
 		
 		%z timezone offset
 		
-examples
-		
+## examples
+```
 		var date = new DateFormat("%D.%M.%y", 2017, 2, 15, 12, 30);
 		
 		date.toString(); //02.15.17
@@ -81,4 +81,4 @@ examples
 		};
 		
 		JSON.stringify(obj); // { "date" : "1488322800000" }
-		
+```
