@@ -6,12 +6,14 @@ A light wight Date wrapper that adds SQL like format capabilities
 ## methods
 
 *constructor([format, [...dateArgs]])*
-	format (optional): the format to be used by default
-	dateArgs (optional): arguments passed to the nativ Date constructor
+
+  format (optional): the format to be used by default
+	
+  dateArgs (optional): arguments passed to the nativ Date constructor
     
 *setformat(format)*
   
-    format: the new format to be used by default
+  format: the new format to be used by default
 		
   toString([format])
     format optional
