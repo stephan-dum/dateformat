@@ -1,7 +1,7 @@
 # DateFormat
 
-A light wight Date wrapper that adds SQL like format capabilities
-(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+A light wight [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) wrapper that adds SQL like format capabilities
+
 
 ## prototype
 
@@ -10,28 +10,29 @@ A light wight Date wrapper that adds SQL like format capabilities
 - **`format`** (optional): the format to be used by default
 - **`dateArgs`** (optional): arguments passed to the nativ Date constructor
 
-### setformat(`format`)
+#### setformat(`format`)
   
-- `format` used as default format
+- **`format`** used as default format
 		
-### toString([`format`])
-- `format` (optional)
+#### toString([`format`])
+- **`format`** (optional)
+
    if format is not present the constructor format will be used.
    if none is present Date.prototype.toString will be returned.
    
-### toJSON()
-- returns the this.getTime which aims to ease convertions to json
+#### toJSON()
+- returns `this.getTime` aiming to ease convertions to json
 		
 ## static properties
-### months `Array<String>`
+#### months `Array<String>`
   3 digit representation of months in english 
   overwrite this to change the month naming
 		
-### days `Array<String>`
+#### days `Array<String>`
   3 digit representation of weekdays in english
   overwrite this to change the day naming
 
-### formats `Object<replacement, function(Date)>`
+#### formats `Object<replacement, function(Date)>`
 the replacement handler host object. One can implement additional handlers here, these are the embedded options:
 		
 -`%d` day of month
