@@ -10,7 +10,7 @@ A light wight [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 - **`format`** (optional) the format to be used by default
 - **`dateArgs`** (optional) arguments passed to the nativ Date constructor
 
-#### setformat(`format`)
+#### setFormat(`format`)
   
 - **`format`** used as default format
 		
@@ -65,12 +65,12 @@ date.toString(); //12:30
 ```javascript
 var date = new DateFormat("%m", 2017, 2);
 		
-		"month: "+date // month: 2
-		"2" == date // true
+"month: "+date // month: 2
+"2" == date // true
 		
-		var obj = {
-			date : date
-		};
+var obj = {
+	date : date
+};
 		
-		JSON.stringify(obj); // { "date" : "1488322800000" }
+JSON.stringify(obj); // { "date" : "1488322800000" }
 ```
