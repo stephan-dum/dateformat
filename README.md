@@ -74,3 +74,10 @@ var obj = {
 		
 JSON.stringify(obj); // { "date" : "1488322800000" }
 ```
+
+
+## Licence
+
+Public Domain
+
+NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
